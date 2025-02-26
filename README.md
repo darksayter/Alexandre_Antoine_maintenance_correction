@@ -35,9 +35,9 @@ Un **bug caché** se trouve dans le projet, et un autre groupe devra le détecte
    - Accédez à [http://localhost/](http://localhost/) dans votre navigateur.
 ---
 ## 📂 Structure des fichiers
-- `database.sql` : Script SQL pour créer la base de données et la table des utilisateurs.
-- `db.php` : Fichier de connexion à la base de données.
-- `home.php` : Page d'accueil après connexion.
+- `init.sql` : Script SQL pour créer la table des utilisateurs.
+- `db_connect.php` : Fichier de connexion à la base de données.
+- `compose.yaml` : Fichier de configuration du Docker Compose
 - `index.php` : Page d'accueil.
 - `login.php` : Page de connexion.
 - `logout.php` : Page de déconnexion.
@@ -45,12 +45,19 @@ Un **bug caché** se trouve dans le projet, et un autre groupe devra le détecte
 - `README.md` : Documentation du projet.
 
 ---
-## 🔎 Détails des fichiers
-### `database.sql`
-Ce fichier contient les instructions SQL pour créer la base de données et la table des utilisateurs, ainsi que pour insérer un utilisateur de test.
 
-### `db.php`
+### `compose.yaml`
+Ce fichier gère la configuration du 
+
+## 🔎 Détails des fichiers
+### `init.sql`
+Ce fichier contient les instructions SQL pour créer la table des utilisateurs.
+
+### `db_connect.php`
 Ce fichier gère la connexion à la base de données MySQL.
+
+### `compose.yaml`
+Ce fichier configure les services Docker pour une base de données MySQL et un serveur PHP-Apache.
 
 ### `index.php`
 Page d'accueil avec un lien vers la page de connexion.
@@ -60,9 +67,6 @@ Page de connexion où les utilisateurs peuvent entrer leurs identifiants, avec u
 
 ### `register.php`
 Page d'inscription où les utilisateurs peuvent créer un nouveau compte, avec un lien vers la page de connexion.
-
-### `home.php`
-Page d'accueil après connexion, affichant un message de bienvenue.
 
 ### `logout.php`
 Page de déconnexion qui supprime certaines informations de session et redirige vers la page d'accueil. 
@@ -83,7 +87,7 @@ Page de déconnexion qui supprime certaines informations de session et redirige 
    - **Mot de passe :** `password123`
 
 4. **Page après connexion** :  
-   Une fois connecté, vous serez redirigé vers `home.php`.
+   Une fois connecté, vous serez redirigé vers `index.php`.
 
 5. **Déconnexion** :  
    Utilisez `logout.php` pour vous déconnecter.
