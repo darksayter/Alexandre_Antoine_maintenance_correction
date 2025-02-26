@@ -76,9 +76,7 @@ Page de déconnexion qui supprime certaines informations de session et redirige 
    Utilisez `register.php` pour créer un nouveau compte utilisateur.
 
 3. **Connexion** :  
-   Utilisez `login.php` et connectez-vous avec les identifiants suivants :  
-   - **Utilisateur :** `testuser`  
-   - **Mot de passe :** `password123`
+   Utilisez `login.php` et connectez-vous avec les identifiants que vous avez renseigné lors de la création de votre compte.  
 
 4. **Page après connexion** :  
    Une fois connecté, vous serez redirigé vers `index.php`.
