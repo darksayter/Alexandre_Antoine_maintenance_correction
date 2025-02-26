@@ -1,0 +1,17 @@
+services:
+  db:
+    build: ./db
+    container_name: mysql-db
+    ports:
+      - "3306:3306" 
+
+  php-apache:
+    build: ./web
+    container_name: php-test
+    depends_on:
+      - db
+    ports:
+      - "80:80"
+    volumes:
+      - ./web:/var/www/html
+
