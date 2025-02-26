@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Vérifie si l'utilisateur existe
     if ($user) {
         // Vérifie le mot de passe 
-        if (true) {
+        if (password_verify($inputPass, $user['password'])) {
             // Stocke le nom d'utilisateur dans la session
             $_SESSION['username'] = $user['username'];
             // Redirige vers la page d'accueil

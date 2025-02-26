@@ -28,11 +28,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($exists) {
             $error = "Le nom d'utilisateur existe déjà.";
         } else {
+            // Hache le mot de passe
+            $hashedPass = password_hash($inputPass, PASSWORD_DEFAULT);
+
             // Prépare une requête pour insérer le nouvel utilisateur dans la base de données
             $stmt = $pdo->prepare("INSERT INTO users (username, password) VALUES (:username, :password)");
             $stmt->execute([
                 'username' => $inputUser,
-                'password' => $inputPass
+                'password' => $hashedPass
             ]);
 
             // Redirige vers la page de connexion avec un paramètre indiquant que l'inscription a réussi
