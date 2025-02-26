@@ -1,8 +1,7 @@
-# Antoine_Alexandre_maintenance_correction_groupe_Ethan_Florian 
+# Antoine_Alexandre_maintenance_correction
 ## R6.06 - Maintenance applicative
 
-Petit projet web avec un formulaire de connexion/création et un **bug caché** à résoudre.  
-Un autre groupe sera chargé de découvrir et corriger ce bug.  
+Correction du projet du groupe de Ethan et Florian.
 
 --- 
 
@@ -12,8 +11,6 @@ Les fonctionnalités principales sont :
 - Créer un compte utilisateur  
 - Se connecter et se déconnecter   
 - Gestion session de l'utilisateur
-
-Un **bug caché** se trouve dans le projet, et un autre groupe devra le détecter et le corriger !
 
 --- 
 ## ⚙️ Installation
@@ -46,9 +43,6 @@ Un **bug caché** se trouve dans le projet, et un autre groupe devra le détecte
 
 ---
 
-### `compose.yaml`
-Ce fichier gère la configuration du 
-
 ## 🔎 Détails des fichiers
 ### `init.sql`
 Ce fichier contient les instructions SQL pour créer la table des utilisateurs.
@@ -63,10 +57,10 @@ Ce fichier configure les services Docker pour une base de données MySQL et un s
 Page d'accueil avec un lien vers la page de connexion.
 
 ### `login.php`
-Page de connexion où les utilisateurs peuvent entrer leurs identifiants, avec un lien vers la page de création.
+Page de connexion où les utilisateurs peuvent entrer leurs identifiants et mots de passes haché, avec un lien vers la page de création.
 
 ### `register.php`
-Page d'inscription où les utilisateurs peuvent créer un nouveau compte, avec un lien vers la page de connexion.
+Page d'inscription où les utilisateurs peuvent créer un nouveau compte, avec un lien vers la page de connexion sécurisé.
 
 ### `logout.php`
 Page de déconnexion qui supprime certaines informations de session et redirige vers la page d'accueil. 
