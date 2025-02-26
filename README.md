@@ -20,7 +20,7 @@ Les fonctionnalités principales sont :
       ```docker compose up -d --build```
 
 2. **Mettre à jour les informations de connexion**  
-   - Modifiez le fichier `db.php` avec vos identifiants MySQL.
+   - Modifiez le fichier `db_connect.php` avec vos identifiants MySQL.
 
    - La configuration par défaut est la suivante : 
       - Nom de la base de données : ```testdb```
