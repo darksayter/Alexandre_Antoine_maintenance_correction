@@ -20,7 +20,7 @@ Un **bug caché** se trouve dans le projet, et un autre groupe devra le détecte
 
 1.  Dans un terminal, placez-vous dans le répertoire du projet et exécutez :
 
-   ```docker compose up -d --build```
+      ```docker compose up -d --build```
 
 2. **Mettre à jour les informations de connexion**  
    - Modifiez le fichier `db.php` avec vos identifiants MySQL.
