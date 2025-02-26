@@ -1,4 +1,4 @@
-# Antoine_Alexandre_maintenance 
+# Antoine_Alexandre_maintenance_correction_groupe_Ethan_Florian 
 ## R6.06 - Maintenance applicative
 
 Petit projet web avec un formulaire de connexion/création et un **bug caché** à résoudre.  
@@ -17,26 +17,21 @@ Un **bug caché** se trouve dans le projet, et un autre groupe devra le détecte
 
 --- 
 ## ⚙️ Installation
-1.  **Cloner le dépôt en local**  
-   ```bash
-   https://github.com/TheArtoriass/Antoine_Alexandre_maintenance.git
-   ```
 
-2. **Configurer le serveur web**  
-   - Utilisez un serveur local comme **WAMP**, **MAMP**... pour héberger le projet.  
-   - Configurez le serveur vers le répertoire du projet.
+1.  Dans un terminal, placez-vous dans le répertoire du projet et exécutez :
 
-3. **Démarrer votre serveur**  
-   - Lancez le serveur (par exemple, **MAMP** ou **XAMPP**) pour pouvoir accéder à l’application via votre navigateur.
+   ```docker compose up -d --build```
 
-4. **Importer la base de données**  
-   - Accédez à [phpMyAdmin](http://localhost/phpMyAdmin/).  
-   - Importez le fichier `database.sql` pour créer la base de données et la table des utilisateurs.
-
-5. **Mettre à jour les informations de connexion**  
+2. **Mettre à jour les informations de connexion**  
    - Modifiez le fichier `db.php` avec vos identifiants MySQL.
 
-6. **Lancer l’application**  
+   - La configuration par défaut est la suivante : 
+      - Nom de la base de données : ```testdb```
+      - Utilisateur : ```testuser```
+      - Mot de passe : ```testpass```
+      - Mot de passe root : ```root```
+
+2. **Lancer l’application**  
    - Accédez à [http://localhost/](http://localhost/) dans votre navigateur.
 ---
 ## 📂 Structure des fichiers
